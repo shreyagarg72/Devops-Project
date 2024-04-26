@@ -16,7 +16,7 @@ RUN mkdir js
 COPY script.js js/
 
 # Expose port 8801 to the outside world
-EXPOSE 8081
+EXPOSE 8000
 
 # Start Nginx server when the container launches
 CMD ["nginx", "-g", "daemon off;"]
