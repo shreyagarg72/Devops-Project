@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy nginx configuration file
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY docker/nginx.conf /etc/nginx/nginx.conf
 
 # Copy static files to Nginx HTML directory
 COPY ../html/ /usr/share/nginx/html
