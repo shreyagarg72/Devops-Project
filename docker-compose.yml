@@ -2,8 +2,6 @@ version: "3.3"
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  image: 07197102/book-store:latest
     ports:
       - "8000:8000"
