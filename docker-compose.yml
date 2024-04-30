@@ -1,7 +1,7 @@
-version: '3.8'
+version: "3.3"
+
 services:
   web:
-    image: 07197102/book-store:latest
+  image: 07197102/book-store:latest
     ports:
       - "8000:8000"
-    # Other configurations like volumes, environment variables, etc.
