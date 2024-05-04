@@ -1,7 +1,7 @@
 version: '3.3'
 services:
   web:
-    build: .
+    build: 07197102/book-project:latest
     ports:
       - "80:80"
     
