@@ -1,8 +1,10 @@
 # Use the official Nginx image as the base image
 FROM nginx:latest
 
-# Copy the entire contents of the current directory to the Nginx HTML directory
-COPY . /usr/share/nginx/html/
+# Copy the website files to the Nginx HTML directory
+COPY index.html /usr/share/nginx/html/index.html
+COPY style.css /usr/share/nginx/html/style.css
+COPY script.js /usr/share/nginx/html/script.js
 
 # Expose the Nginx port
-EXPOSE 8000
+EXPOSE 80
