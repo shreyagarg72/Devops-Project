@@ -1,11 +1,8 @@
-# Stage 1: Build stage
-FROM nginx:alpine AS builder
+# Use the official Nginx image as the base image
+FROM nginx:latest
 
-# Copy the static files to the Nginx HTML directory
-COPY . /usr/share/nginx/html
+# Copy the entire contents of the current directory to the Nginx HTML directory
+COPY . /usr/share/nginx/html/
 
-# Stage 2: Production stage
-FROM nginx:alpine
-
-# Expose port 80 for HTTP traffic
+# Expose the Nginx port
 EXPOSE 8000

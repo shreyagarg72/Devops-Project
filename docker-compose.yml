@@ -1,7 +1,8 @@
-version: '3.8'
+version: '3'
 services:
   web:
-    image: 07197102/book-store:latest
+    build: .
     ports:
-      - "8000:8000"
-    # Other configurations like volumes, environment variables, etc.
+      - "8080:8000"
+    volumes:
+      - .:/usr/share/nginx/html
