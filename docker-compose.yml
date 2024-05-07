@@ -1,6 +1,7 @@
 version: '3.3'
 services:
   web:
-    image: 07197102/book-project
+    build: .
     ports:
       - "80:80"
+
